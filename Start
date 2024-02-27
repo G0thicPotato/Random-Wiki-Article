@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Wikipedia Article</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Random Wikipedia Article</h1>
+        <button onclick="getRandomArticle()">Go to a random Wikipedia article</button>
+    </div>
+
+    <script>
+        function getRandomArticle() {
+            var randomUrl = 'https://en.wikipedia.org/wiki/Special:Random';
+            window.location.href = randomUrl;
+        }
+    </script>
+</body>
+</html>
